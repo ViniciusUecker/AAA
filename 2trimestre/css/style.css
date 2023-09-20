@@ -1,0 +1,105 @@
+body{
+    background-color:rgb(34,34,34);
+    color: white;
+    font-family:'Poppins', sans-serif;;
+    margin: 0 auto;/* margens laterais automáticas para ficar centralizado*/
+    max-width: 1200px;/* não ultrapassará uma largura máxima de 1200 pixels, serve para layouts ficarem bonitos 
+    em várias resoluções de tela.*/
+}
+.menu{
+    display:flex;/*eu usei esse comando para criar layouts  flexíveis e controlar a posição, alinhamento e distribuição 
+    dos elementos filhos */
+    justify-content: space-between;/*cria um espaço entre os elementos*/
+    align-items: center;
+
+}
+ul{
+    margin-right: -60px;
+}
+
+#logo img{
+    width: 350px; /*largura fixa */
+    height: auto;
+    padding-top: 60px;
+    margin-bottom: 50px;
+}
+ul{
+    margin-right: 135px;
+}
+li{
+    display:inline-block;
+font-size: 20px;
+
+}
+li a{
+    text-decoration: none;/*tirar o sublinhado do link*/
+    padding:30px;
+    color:white;
+}
+
+li a:hover{
+    color:#e65119;
+    transition: 0.5s all;/*esse efeito deixa a transição do hover mais lenta*/
+}
+
+li a:active{
+color:white;
+transition: 0.0s all;
+}
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaço entre o menu e os h1 */
+}
+#body p{
+    line-height: 20px;
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+h1 {
+    margin-top: 5px; /* Margem superior e inferior para aproximar os h1 */
+    font-size: 57px;
+    line-height: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+span{
+    color:#2f4f4f;
+}
+
+#body h2{
+    margin-top: 5px;
+    color:#e65119;
+    font-size: 30px;
+}
+
+.imagem{
+    width: 600px;
+    margin-right: 20px;
+
+}
+.imagem1{
+    width: 300px;
+}
+.imagem2{
+    width: 400px;
+}
+.imagens img{
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+a{
+    text-decoration: none;/*tirar o sublinhado do link*/
+    color:white;
+}
+a:hover{
+    color:#e65119;
+}
+iframe{
+    margin-right: 20px;
+}
+#voltar{
+    color:#2f4f4f;
+    padding-bottom: 20px;
+}

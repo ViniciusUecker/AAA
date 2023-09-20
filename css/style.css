@@ -1,0 +1,115 @@
+body {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto; /* margens laterais automáticas para ficar centralizado*/
+  max-width: 87%; /* não ultrapassará uma largura máxima de 1200 pixels, serve para layouts ficarem bonitos 
+    em várias resoluções de tela.*/
+}
+.menu {
+  display: flex; /*eu usei esse comando para criar layouts  flexíveis e controlar a posição, alinhamento e distribuição 
+    dos elementos filhos */
+  justify-content: space-between; /*cria um espaço entre os elementos*/
+  align-items: center;
+}
+#logo img {
+  width: 350px; /*largura fixa */
+  height: auto;
+  padding-top: 60px;
+  margin-bottom: 50px;
+}
+ul {
+  margin-right: 135px;
+}
+li {
+  display: inline-block;
+  font-size: 20px;
+}
+li a {
+  text-decoration: none; /*tirar o sublinhado do link*/
+  padding: 30px;
+  color: white;
+}
+
+li a:hover {
+  color: #e65119;
+  transition: 0.5s all; /*esse efeito deixa a transição do hover mais lenta*/
+}
+
+li a:active {
+  color: white;
+  transition: 0s all;
+}
+
+.corpo {
+  display: flex;
+  flex-direction: row; /*usei esses comandos para poder por o título e a imagem lado a lado*/
+  margin-top: 5px;
+}
+.corpo img {
+  width: 605px;
+  height: 436, 5px;
+  margin-left: 130px;
+  margin-top: -75px;
+}
+h1 {
+  margin-top: 40px;
+  font-size: 57px;
+  line-height: 10px;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  line-height: 20px;
+  max-width: 400px;
+}
+h3 {
+  margin-top: 50px;
+}
+h3 a {
+  text-decoration: none; /*tirar o sublinhado do link*/
+  color: #e65119;
+}
+
+h3 a:hover {
+  color: #ffc58d;
+  transition: 0.5s all;
+}
+
+h3 a:active {
+  color: #e65119;
+  transition: 0s all;
+}
+span {
+  color: #2f4f4f;
+}
+@media (max-width: 1000px) {
+  body {
+    max-width: none;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  ul {
+    margin-right: none;
+    margin-left:8%;
+  }
+  li a {
+    padding: none;
+    font-size:27px;
+  }
+  #logo img {
+    width: 450px;
+  }
+  .corpo {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1{
+      font-size: 80px;
+  }
+  .corpo img{
+      width:75%;
+margin-right:13%;
+margin-top: 1%;
+    }
+}
